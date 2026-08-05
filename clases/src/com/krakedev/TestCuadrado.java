@@ -7,21 +7,25 @@ public class TestCuadrado {
         Cuadrado c2 = new Cuadrado();
         Cuadrado c3 = new Cuadrado();
 
-        c1.lado = 4;
-        c2.lado = 3;
-        c3.lado = 5;
+        System.out.println("--- Valores iniciales (por defecto) ---");
+        System.out.println("Lado c1 por defecto: " + c1.getLado());
 
-        double area1 = c1.calcularArea();
-        double perimetro1 = c1.calcularPerimetro();
+        c1.setLado(4);
+        c2.setLado(3);
+        c3.setLado(5);
 
-        double area2 = c2.calcularArea();
-        double perimetro2 = c2.calcularPerimetro();
+        double area1 = c1.calcularAreaCuadrado();
+        double perimetro1 = c1.calcularPerimetroCuadrado();
 
-        double area3 = c3.calcularArea();
-        double perimetro3 = c3.calcularPerimetro();
+        double area2 = c2.calcularAreaCuadrado();
+        double perimetro2 = c2.calcularPerimetroCuadrado();
 
-        System.out.println("Cuadrado 1 - Area: " + area1 + " | Perimetro: " + perimetro1);
-        System.out.println("Cuadrado 2 - Area: " + area2 + " | Perimetro: " + perimetro2);
-        System.out.println("Cuadrado 3 - Area: " + area3 + " | Perimetro: " + perimetro3);
+        double area3 = c3.calcularAreaCuadrado();
+        double perimetro3 = c3.calcularPerimetroCuadrado();
+
+        System.out.println("\n--- Valores modificados y resultados ---");
+        System.out.println("Cuadrado 1 - Lado: " + c1.getLado() + " | Area: " + area1 + " | Perimetro: " + perimetro1);
+        System.out.println("Cuadrado 2 - Lado: " + c2.getLado() + " | Area: " + area2 + " | Perimetro: " + perimetro2);
+        System.out.println("Cuadrado 3 - Lado: " + c3.getLado() + " | Area: " + area3 + " | Perimetro: " + perimetro3);
     }
 }
