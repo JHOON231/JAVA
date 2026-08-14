@@ -1,9 +1,16 @@
 package com.krakedev;
 
 public class Vehiculo {
-    private String marca; 
+    private String marca;
     private String modelo;
-    private String año;
+    private String anio;
+
+    // Único constructor con parámetros completos
+    public Vehiculo(String marca, String modelo, String anio) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.anio = anio;
+    }
 
     public String getMarca() {
         return marca;
@@ -21,11 +28,11 @@ public class Vehiculo {
         this.modelo = modelo;
     }
 
-    public String getAño() {
-        return año;
+    public String getAnio() {
+        return anio;
     }
 
-    public void setAño(String año) {
-        this.año = año;
+    public void setAnio(String anio) {
+        this.anio = anio;
     }
 }

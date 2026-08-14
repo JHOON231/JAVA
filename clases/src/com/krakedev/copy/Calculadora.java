@@ -1,4 +1,4 @@
-package com.krakedev;
+package com.krakedev.copy;
 
 public class Calculadora {
 	

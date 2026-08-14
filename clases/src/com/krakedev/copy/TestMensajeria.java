@@ -1,0 +1,15 @@
+package com.krakedev.copy;
+
+public class TestMensajeria {
+
+    public static void main(String[] args) {
+
+        Mensajeria m1 = new Mensajeria();
+
+        m1.saludar();
+
+        m1.saludarPersona("Cristiano", "CR7");
+
+    }
+
+}
